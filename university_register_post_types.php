@@ -55,7 +55,7 @@
 
         //Campuses Post Types
         register_post_type('Campus',array(
-            'rewrite' => array('slug' => 'Campuses'),
+            'rewrite' => array('slug' => 'campuses'),
             'supports' => array('title', 'editor','excerpt'),
             'has_archive' => true,
             'public'=> true,
