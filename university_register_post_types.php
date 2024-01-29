@@ -3,6 +3,9 @@
 
         //Event Post Types
         register_post_type('event',array(
+            // To set custom user/members we mus do things like
+            'capability_type' => 'event',
+            'map_meta_cap' => true,
             'rewrite' => array('slug' => 'events'),
             'supports' => array('title', 'editor','excerpt'),
             'has_archive' => true,
@@ -55,6 +58,9 @@
 
         //Campuses Post Types
         register_post_type('Campus',array(
+             // To set custom user/members we mus do things like
+            'capability_type' => 'campus',
+            'map_meta_cap' => true,
             'rewrite' => array('slug' => 'campuses'),
             'supports' => array('title', 'editor','excerpt'),
             'has_archive' => true,
