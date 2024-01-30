@@ -76,6 +76,23 @@
             ),
             'menu_icon' => 'dashicons-location-alt'
         ));
+
+        //Notes Post Types
+        register_post_type('note',array(
+            'supports' => array('title', 'editor'),
+            'public'=> false,
+            'show_ui' => true,
+            'show_in_rest' => true,
+            'labels' => array(
+                'name' => 'Notes',
+                'add_new_item' => 'Add New Note',
+                'add_new'  => 'Add New Note',
+                'edit_item' => 'Edit Note',
+                'all_items' => 'All Notes',
+                'singular_name' => 'Note',
+            ),
+            'menu_icon' => 'dashicons-welcome-write-blog'
+        ));
         
     }
     add_action('init','university_post_types')
